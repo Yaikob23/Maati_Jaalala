@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="om" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tesgera Family Portal | Family Tree</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <i class="fas fa-house-chimney-window"></i>
+      <span>Tesgera</span> Portal
+    </a>
+
+    <!-- Navigation Links -->
+    <nav id="navbar" class="navbar">
+      <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+      <a href="photo.html" class="nav-link"><i class="fas fa-images"></i> Photos</a>
+      <a href="tree.html" class="nav-link active"><i class="fas fa-sitemap"></i> Family Tree</a>
+      <a href="about.html" class="nav-link"><i class="fas fa-user-group"></i> About</a>
+      <a href="contact.html" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a>
+      
+      <!-- Click-to-Toggle Theme Button -->
+      <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+        <span id="theme-text"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation Toggle Button -->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+      <i class="fas fa-bars-staggered"></i>
+    </button>
+  </header>
+
+  <!-- ==========================================================================
+       2. INTERACTIVE FAMILY TREE CONTAINER
+       ========================================================================== -->
+  <main class="container">
+    <section class="tree-wrapper">
+      
+      <div class="section-header center">
+        <h1 class="section-title">Muka Maatii (Family Tree)</h1>
+        <p class="section-desc">Hidda dhaloota fi maatii Tesgera Tujuba & Bultu Dinagde</p>
+      </div>
+
+      <!-- Family Tree Hierarchy Structure -->
+      <div class="tree-container">
+        
+        <!-- Parent Generation (Roots) -->
+        <div class="tree-level parents-level">
+          <!-- Father -->
+          <div class="tree-card parent-card primary">
+            <div class="avatar">
+              <img src="images/Father.jpg" alt="Tesgera Tujuba" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <i class="fas fa-user-tie" style="display:none;"></i>
+            </div>
+            <div class="card-info">
+              <h3>Tesgera Tujuba</h3>
+              <span class="relation-tag">Abbaa (Father)</span>
+            </div>
+          </div>
+
+          <div class="family-union-badge" title="Jaalala Maatii">
+            <i class="fas fa-heart"></i>
+          </div>
+
+          <!-- Mother -->
+          <div class="tree-card parent-card secondary">
+            <div class="avatar">
+              <img src="images/Mother.jpg" alt="Bultu Dinagde Fufa" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <i class="fas fa-user-nurse" style="display:none;"></i>
+            </div>
+            <div class="card-info">
+              <h3>Bultu Dinagde Fufa</h3>
+              <span class="relation-tag">Haadha (Mother)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connecting Visual Line -->
+        <div class="tree-connector-line"></div>
+
+        <!-- Children Generation Grid (7 Children) -->
+        <div class="tree-level children-level">
+          <h2 class="level-title"><i class="fas fa-users"></i> Ijoollee 7 (7 Children)</h2>
+          
+          <div class="children-grid">
+            
+            <!-- Child 1: Bontu -->
+            <div class="tree-card child-card">
+              <div class="avatar">
+                <img src="images/chil11.jpg" alt="Bontu Tesgera" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <i class="fas fa-child" style="display:none;"></i>
+              </div>
+              <div class="card-info">
+                <h3>Bontu Tesgera</h3>
+                <span class="child-tag">Ilmoo 1ffaa</span>
+              </div>
+            </div>
+
+            <!-- Child 2: Abraham -->
+            <div class="tree-card child-card">
+              <div class="avatar">
+                <img src="images/chil2.jpg" alt="Abraham Tesgera" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <i class="fas fa-child" style="display:none;"></i>
+              </div>
+              <div class="card-info">
+                <h3>Abraham Tesgera</h3>
+                <span class="child-tag">Ilmoo 2ffaa</span>
+              </div>
+            </div>
+
+            <!-- Child 3: Yaikob -->
+            <div class="tree-card child-card">
+              <div class="avatar">
+                <img src="images/child1.jpg" alt="Yaikob Tesgera" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <i class="fas fa-user-graduate" style="display:none;"></i>
+              </div>
+              <div class="card-info">
+                <h3>Yaikob Tesgera</h3>
+                <span class="child-tag">Ilmoo 3ffaa</span>
+              </div>
+            </div>
+
+            <!-- Child 4: Bonsa -->
+            <div class="tree-card child-card">
+              <div class="avatar">
+                <img src="images/child4.jpg" alt="Bonsa Tesgera" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <i class="fas fa-child" style="display:none;"></i>
+              </div>
+              <div class="card-info">
+                <h3>Bonsa Tesgera</h3>
+                <span class="child-tag">Ilmoo 4ffaa</span>
+              </div>
+            </div>
+
+            <!-- Child 5: Lalise -->
+            <div class="tree-card child-card">
+              <div class="avatar">
+                <img src="images/ch5.jpg" alt="Lalise Tesgera" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <i class="fas fa-child-reaching" style="display:none;"></i>
+              </div>
+              <div class="card-info">
+                <h3>Lalise Tesgera</h3>
+                <span class="child-tag">Ilmoo 5ffaa</span>
+              </div>
+            </div>
+
+            <!-- Child 6: Hacaluu -->
+            <div class="tree-card child-card">
+              <div class="avatar">
+                <img src="images/child7.jpg" alt="Hacaluu Tesgera" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <i class="fas fa-child-reaching" style="display:none;"></i>
+              </div>
+              <div class="card-info">
+                <h3>Hacaluu Tesgera</h3>
+                <span class="child-tag">Ilmoo 6ffaa</span>
+              </div>
+            </div>
+
+            <!-- Child 7: Yeruu -->
+            <div class="tree-card child-card">
+              <div class="avatar">
+                <img src="images/child7.jpg" alt="Yeruu Tesgera" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <i class="fas fa-child-reaching" style="display:none;"></i>
+              </div>
+              <div class="card-info">
+                <h3>Yeruu Tesgera</h3>
+                <span class="child-tag">Ilmoo 7ffaa</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Back-to-Top Button -->
+  <button id="scrollTopBtn" title="Gara irraatti deebi'i"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- ==========================================================================
+       3. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a> • 
+      <a href="photo.html">Photos</a> • 
+      <a href="tree.html">Family Tree</a> • 
+      <a href="about.html">About</a> • 
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; <span id="jabaa-year"></span> Portal Maatii Tesgera. Jaalalaan kan ijaarame.</p>
+  </footer>
+
+  <script src="js/family.js"></script>
+</body>
+</html>

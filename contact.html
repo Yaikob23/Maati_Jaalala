@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="om" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tesgera Family Portal | Contact</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/family.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <i class="fas fa-house-chimney-window"></i>
+      <span>Tesgera</span> Portal
+    </a>
+
+    <!-- Navigation Links -->
+    <nav id="navbar" class="navbar">
+      <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+      <a href="photo.html" class="nav-link"><i class="fas fa-images"></i> Photos</a>
+      <a href="tree.html" class="nav-link"><i class="fas fa-sitemap"></i> Family</a>
+      <a href="about.html" class="nav-link"><i class="fas fa-user-group"></i> About</a>
+      <a href="contact.html" class="nav-link active"><i class="fas fa-paper-plane"></i> Contact</a>
+      
+      <!-- One-Click Light/Dark Mode Toggle Button -->
+      <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+        <span id="theme-text"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation Toggle Button -->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+      <i class="fas fa-bars-staggered"></i>
+    </button>
+  </header>
+
+  <!-- ==========================================================================
+       2. CONTACT FORM & INFORMATION
+       ========================================================================== -->
+  <main class="container">
+    <section class="contact-wrapper">
+      
+      <div class="section-header center">
+        <h1 class="section-title">Nu Quunnamaa</h1>
+        <p class="section-desc">Ergaa, yaada yookaan gaaffii maatii teessan (Bultu Dinagde fi ijoollee 7) asirraan nuuf ergaa</p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Quick Info Banner -->
+        <div class="contact-info-card">
+          <h2><i class="fas fa-comments"></i> Yaada fi Ergaa</h2>
+          <p>Suuraa obboleeyyan 7n (Bontu, Abraham, Yaikob, Bonsa, Lalise, Hacaluu, Yeruu) dabaluuf ykn seenaa maatii sirreessuuf ergaa nuuf erguu dandeessu.</p>
+
+          <div class="info-item">
+            <i class="fas fa-user-shield"></i>
+            <div>
+              <strong>Admiinii Portal:</strong>
+              <p>Yaikob Tesgera Tujuba</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <strong>Bakka:</strong>
+              <p>Finfinnee / Ethiopia</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-envelope-circle-check"></i>
+            <div>
+              <strong>Imeelii Walqunnamtii:</strong>
+              <p>contact@tesgeraportal.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-phone-volume"></i>
+            <div>
+              <strong>Lakkoofsa Bilbilaa:</strong>
+              <p>+251 900 000 000</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Sa'aatii Hojii:</strong>
+              <p>Waggoota Cufa (24/7 Dijitaala)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="senderName"><i class="fas fa-user"></i> Maqaa Guutuu</label>
+            <input type="text" id="senderName" placeholder="Maqaa keessan galchaa..." required>
+          </div>
+
+          <div class="form-group">
+            <label for="senderEmail"><i class="fas fa-envelope"></i> Teessoo Imeelii</label>
+            <input type="email" id="senderEmail" placeholder="example@gmail.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject"><i class="fas fa-heading"></i> Mata Duree</label>
+            <input type="text" id="contactSubject" placeholder="Mata duree ergaa keessani..." required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage"><i class="fas fa-message"></i> Ergaa Keessan</label>
+            <textarea id="contactMessage" rows="5" placeholder="Ergaa keessan asitti barreessaa..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="urgencyLevel"><i class="fas fa-gauge-high"></i> Sadarkaa Ariifachiisummaa</label>
+            <select id="urgencyLevel" style="width: 100%; padding: 0.75rem 1rem; border-radius: var(--radius-sm); background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary);">
+              <option value="normal">Idilee (Normal)</option>
+              <option value="important">Barbaachisaa (Important)</option>
+              <option value="urgent">Ariifachiisaa (Urgent)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Ergaa Ergi
+          </button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Back-to-Top Button -->
+  <button id="scrollTopBtn" title="Gara irraatti deebi'i"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- ==========================================================================
+       3. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a> • 
+      <a href="photo.html">Photos</a> • 
+      <a href="tree.html">Family</a> • 
+      <a href="about.html">About</a> • 
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; <span id="jabaa-year"></span> Portal Maatii Tesgera (Bultu Dinagde & Children). Jaalalaan kan ijaarame.</p>
+  </footer>
+
+  <script src="js/family.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="om" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tesgera Family Portal | About</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <i class="fas fa-house-chimney-window"></i>
+      <span>Tesgera</span> Portal
+    </a>
+
+    <!-- Navigation Links -->
+    <nav id="navbar" class="navbar">
+      <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+      <a href="photo.html" class="nav-link"><i class="fas fa-images"></i> Photos</a>
+      <a href="tree.html" class="nav-link"><i class="fas fa-sitemap"></i> Family</a>
+      <a href="about.html" class="nav-link active"><i class="fas fa-user-group"></i> About</a>
+      <a href="contact.html" class="nav-link"><i class="fas fa-paper-plane"></i> Contact</a>
+      
+      <!-- One-Click Light/Dark Mode Toggle Button -->
+      <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+        <span id="theme-text"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation Toggle Button -->
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+      <i class="fas fa-bars-staggered"></i>
+    </button>
+  </header>
+
+  <!-- ==========================================================================
+       2. ABOUT CONTENT CONTAINER
+       ========================================================================== -->
+  <main class="container">
+    <section class="about-wrapper">
+      
+      <div class="section-header center">
+        <h1 class="section-title">Waa'ee Maatii Keenyaa</h1>
+        <p class="section-desc">Seenaa, aadaa fi kaayyoo Portal Maatii Tesgera Tujuba fi Bultu Dinagde</p>
+      </div>
+
+      <div class="about-card-container">
+        
+        <!-- Story Card -->
+        <article class="about-card">
+          <div class="card-icon"><i class="fas fa-book-bookmark"></i></div>
+          <h2>Seenaa Gabaabaa</h2>
+          <p>
+            Portalii kun kaayyoo guddaa tokkoof ijaarame: seenaa fi yaadannoowwan gurguddoo maatii 
+            <strong>Obbo Tesgera Tujuba</strong> fi haadha manaa isaanii <strong>Adde Bultu Dinagde</strong> dhaloota boruuf olkaahuuf. 
+            Maatiin keenya ijoollee 7 (<strong>Bontu, Abraham, Yaikob, Bonsa, Lalise, Hacaluu, fi Yeruu</strong>) kan hammatu yoo ta'u, tokkummaa fi jaalala maatii keenyaa caalaatti cimsuuf bakka dijitaalaa kana uumne.
+          </p>
+          <div class="card-extra-spacer" style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+            Seenaan maatii keenyaa bu'uura cimaa qaba. Dhalootaa dhalootatti dabarsuuf qophaa'ee jira.
+          </div>
+        </article>
+
+        <!-- Values Card -->
+        <article class="about-card">
+          <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h2>Dhaadannoo fi Safuu Maatii</h2>
+          <ul class="values-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Tokkummaa:</strong> Wal-gargaarsa fi tokkummaa maatii keessatti fiduu.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Aadaa fi Kabaja:</strong> Safuu fi seenaa maatii keenyaa kabajuu fi eeguu.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Yaadannoo:</strong> Suuraalee fi milkaa'ina ijoollee 7 (Bontu, Abraham, Yaikob, Bonsa, Lalise, Hacaluu, Yeruu) galmeessitee tursiisuu.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Amala Gaarii:</strong> Ijoolleef qajeelfama jireenyaa kennuu.</li>
+          </ul>
+        </article>
+
+        <!-- Platform Vision Card -->
+        <article class="about-card">
+          <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+          <h2>Kaayyoo Portal Dijitaalaa</h2>
+          <p>
+            Teknoolojii ammayyaa fayyadamuun maatii keenya bakka jiran cufa irraa walitti hidhuu, suuraalee olfe'uu, 
+            fi seenaa hidda dhaloota keenyaa (Family Tree) salphaatti akka ilaalan gochuuf kan dizaayinii ta'eedha.
+          </p>
+          <div class="card-extra-spacer" style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+            Sirni kun marsariitii ammayyaa irratti hundaa'uun odeeffannoo eeguuf gargaara.
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Back-to-Top Button -->
+  <button id="scrollTopBtn" title="Gara irraatti deebi'i"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- ==========================================================================
+       3. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a> • 
+      <a href="photo.html">Photos</a> • 
+      <a href="tree.html">Family</a> • 
+      <a href="about.html">About</a> • 
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; <span id="jabaa-year"></span> Portal Maatii Tesgera (Bultu Dinagde & Children). Jaalalaan kan ijaarame.</p>
+  </footer>
+
+  <script src="js/family.js"></script>
+</body>
+</html>

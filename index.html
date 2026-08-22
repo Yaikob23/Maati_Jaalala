@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="om" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Tesgera Portal - Fuula Duraa, Teeknoolojii, fi Maatii Tesgera fi Bultu Dinagde">
+    <title>Tesgera Portal - Home</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/family.css">
+</head>
+<body>
+
+    <!-- Header / Dynamic Responsive Navigation -->
+    <header class="header">
+        <a href="index.html" class="logo" aria-label="Tesgera Portal Logo">
+            <i class="fas fa-heart logo-heart" aria-hidden="true"></i> Tesgera Portal
+        </a>
+
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="photo.html">Photos</a> • 
+            <a href="tree.html">Family</a> • 
+            <a href="about.html">About</a> • 
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <!-- One-Click Light/Dark Mode Toggle Button -->
+            <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Color Theme" style="background: none; border: 1px solid var(--border-color, rgba(255,255,255,0.2)); color: var(--text-main, #fff); padding: 0.5rem 0.75rem; border-radius: 8px; cursor: pointer; font-size: 1.1rem;">
+                <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
+            </button>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Stream -->
+    <main class="family-content">
+        
+        <!-- Hero Banner -->
+        <section class="family-hero">
+            <div class="container">
+                <div class="family-header-card">
+                    <span class="love-badge"><i class="fas fa-star" aria-hidden="true"></i> BAGA NAGAAN DUFTAN</span>
+                    <h1 class="family-main-title">Baga nagaan gara Tesgera Portal dhuftan! ❤️🙏🌸</h1>
+                    <p class="family-subtitle-en">Maatii Tesgera (Haadha Manaa: Bultu Dinagde) fi ijoollee isaanii 7 (Bontu, Abraham, Yaikob, Bonsa, Lalise, Hacaluu, Yeruu) waliin teeknoolojii, aadaa, fi tokkummaa ijaarra.</p>
+                    
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="service.html" class="btn btn-primary btn-love">
+                            <i class="fas fa-rocket" aria-hidden="true"></i> Tajaajila Keenya
+                        </a>
+                        <a href="photo.html" class="btn btn-outline" style="border: 1px solid var(--border-color, rgba(255,255,255,0.2)); color: var(--text-main, #fff); padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none;">
+                            <i class="fas fa-users" aria-hidden="true"></i> Maatii Ilaalaa
+                        </a>
+                        <a href="contact.html" class="btn btn-outline" style="border: 1px solid var(--border-color, rgba(255,255,255,0.2)); color: var(--text-main, #fff); padding: 0.75rem 1.5rem; border-radius: 12px; text-decoration: none;">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Nu Quunnamaa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Grid -->
+        <section class="container family-values-section">
+            <div class="values-grid">
+                <div class="love-quote-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Furmaata Teeknooloojii 💻🚀</h3>
+                    <p>Softwarewwan ammayyaa, weebsaayitoota, fi tajaajila saayibarii tiiknooloojii qulqullinaa fi sammuu namaa hawwatuun dhiyeessina. 💡🌐✨</p>
+                </div>
+
+                <div class="love-quote-card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Kabajaa fi Tokkummaa Maatii ❤️</h3>
+                    <p>Maatii Tesgera fi Bultu Dinagde akkasumas ijoollee isaanii 7 (Bontu, Abraham, Yaikob, Bonsa, Lalise, Hacaluu, Yeruu) waliin amanamummaa, kabajaa fi jaalala irratti hundaa’uun waliin guddanna. 🌱</p>
+                </div>
+
+                <div class="love-quote-card">
+                    <div class="card-icon">🌟</div>
+                    <h3>Mul’ata Fuulduraa 🌟🚀</h3>
+                    <p>Dhaloota dhufuuf fakkeenya gaarii ta’uuf fi ogummaa keenyaan addunyaa jijjiiruuf tattaafanna. 🌍💡❤️</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="jabaa-year"></span> Tesgera Portal & Family (Bultu Dinagde & Children). Mirgi Maxxansaa Seeraan Eeggamaadha.</p>
+    </footer>
+
+    <!-- JavaScript Handling Theme Toggle & Responsiveness -->
+    <script src="js/family.js"></script>
+</body>
+</html>
